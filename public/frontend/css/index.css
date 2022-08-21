@@ -1,0 +1,239 @@
+html,body{
+	margin:0;
+	padding: 0;
+	background:#d6d6d6;
+	font-family: sans-serif;
+}
+.contanier{
+	width:100%;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#header{
+	width:90%;
+	float: left;
+	padding-left:5%;
+	padding-right:5%;
+position: fixed;
+display: flex;
+justify-content: space-between;
+align-items: center;
+top: 0px;
+	background-color:#ffff;
+}
+#header h1{
+font-family: sans-serif;
+display: inline-block;
+}
+.messageScreen{
+	width:1000px;
+	height:500px;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	overflow-x: hidden; overflow-y: scroll;
+}
+.messageContent{
+	padding-left:15px;
+
+	font-family: sans-serif;
+	font-size:13px;
+	letter-spacing: 2px;
+	background-color: black;
+	color: green;
+}
+
+
+#messageContanier{
+	width: 100%;
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color:#bdbcb1;
+	position: fixed;
+	bottom: 0px;
+	padding-left:10%;
+	padding-right:10% ;
+}
+#messageİnput{
+width:67%;
+
+height: 35px;
+border: none;
+float: left;
+text-align: center;
+font-family: sans-serif;
+font-size:15px;
+}
+#messageSend{
+	width:3%;
+	height:37px;
+	float: left;
+	background-color:;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#messageSend img{
+	width:auto;
+	height:33px;
+}
+#btnSend{
+	border: none;
+	cursor: pointer;
+}
+
+.users{
+	width:250px;
+	height:400px;
+	background-color: rgb(146,146,146,0.5);
+	position: fixed;
+	right:0px;
+	top:200px;
+
+}
+.userContent{
+	width: 80%;
+	padding-left:10%;
+	padding-right:10%;
+	padding-top:7px;
+	padding-bottom:7px;
+    position: relative;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.userContent:hover{
+    opacity:0.7;
+}
+.userİmage{
+	margin-right:7px;
+	width:35px;
+	height:35px;
+	position: relative;
+	border-radius:50%;
+}
+.userİmage img{
+	width:100%;
+	height:auto;
+    border-radius:50%;
+
+}
+.userStatu{
+	width:12px;
+	height: 12px;
+
+	border-radius:50%;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.userName h1{
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+#image-add{
+    width:5%;
+    height: 37px;
+    background-color: #1d68a7;
+}
+.file-upload[type="file"]{
+    display: none;
+}
+.file-upload{
+    padding:10px;
+    background-color: black;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    width:35px;
+    margin-left:5px;
+    font-family: sans-serif;
+    padding:1px;
+    font-size: 10px;
+    height: 35px;
+    cursor: pointer;
+    float: left;
+}
+.custom-file-upload img{
+    width:100%;
+    height: auto;
+}
+.invitation button{
+    width:30px;
+    height: 30px;
+    background-color:rgb(255,255,255,0);
+    border:none;
+    position: absolute;
+    right:5px;
+    top:5px;
+    z-index: 999;
+}
+.invitation img{
+    width:100%;
+    height:auto;
+}
+#imageContanier{
+    width:100%;
+    height: 100vh;
+    position:absolute;
+    top: 0px;
+    z-index: 9999999;
+    background-color:rgb(130,130,130,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#imageContent{
+    width:400px;
+    height:auto;
+    background-color:white;
+    position: relative;
+}
+
+#close{
+    width: 15px;
+    height: auto;
+    position: absolute;
+    top: 15px;
+    right:15px;
+    cursor: pointer;
+}
+#imageContentİmg{
+    width:100%;
+    height: auto;
+}
+#loaderContanier{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 999999;
+
+    display: none;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3b9fb2;
+    border-bottom: 16px solid #3b9fb2;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
